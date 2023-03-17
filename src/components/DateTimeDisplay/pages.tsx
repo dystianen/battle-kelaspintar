@@ -1,12 +1,8 @@
-import { Text } from '@chakra-ui/react';
 import React from 'react';
 
-const DateTimeDisplay = ({ value, type, isDanger }: any) => {
-  return (
-    <div className={isDanger ? 'countdown danger' : 'countdown'}>
-      <Text>{value}</Text>
-    </div>
-  );
+const DateTimeDisplay = ({ value }: any) => {
+
+  return <h2>{value}</h2>
 };
 
 export default DateTimeDisplay;

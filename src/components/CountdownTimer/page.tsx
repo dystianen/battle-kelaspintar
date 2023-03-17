@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import DateTimeDisplay from '../DateTimeDisplay/pages';
-import { useCountdown } from '../../utils/useCountdown/page';
 import { Box, Heading, Text } from '@chakra-ui/react';
+import { useCountdown } from '@/utils/useCountdown/page';
 
 const ShowCounter = ({ days, hours, minutes, seconds }: any) => {
   return (
