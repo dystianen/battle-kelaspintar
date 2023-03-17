@@ -23,7 +23,7 @@ export default function CommingSoon() {
         </Text>
       </Box>
 
-      <Box align={'center'} zIndex={10}>
+      <Box textAlign={'center'} zIndex={10}>
         <Heading fontSize={{ base: '24px', md: '40px', lg: '50px', '2xl': '60px' }} color='white' fontWeight={600} mb={2}>
           Battle <span style={{ color: '#FFCE00' }}>Pintar SNBT</span> 2023
         </Heading>
@@ -38,23 +38,23 @@ export default function CommingSoon() {
 
       <Box border='1px' borderColor='gray.200' borderRadius={'20px'} p={3} m={{ base: 5, md: 10 }} style={{ zIndex: '100' }}>
         <Box display={'flex'} flexDirection={'row'} gap={{ base: '25px', lg: '50px' }} bgColor={'#1067CD'} py={'20px'} px={{ base: '20px', md: '35px' }} borderRadius={'20px'}>
-          <div align={'center'}>
+          <Box textAlign={'center'}>
             <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
               Catat Tanggalnya
             </Text>
             <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px' }}>
               27 Mar - 08 Apr 2023
             </Text>
-          </div>
+          </Box>
 
-          <div align={'center'}>
+          <Box textAlign={'center'}>
             <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
               Pendaftaran
             </Text>
             <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px' }}>
               27 Mar - 08 Apr 2023
             </Text>
-          </div>
+          </Box>
         </Box>
       </Box>
 
