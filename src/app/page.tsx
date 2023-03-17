@@ -1,8 +1,6 @@
 import styles from './page.module.css'
-import CommingSoon from "@/components/comming-soon/page";
+import CommingSoon from "@/components/ComingSoon/page";
 
 export default function Home() {
-  return (
-      <CommingSoon />
-  )
+  return <CommingSoon />
 }
