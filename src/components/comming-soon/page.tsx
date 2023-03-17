@@ -90,8 +90,23 @@ export default function CommingSoon() {
 
       <Text color={'white'} fontSize={'20px'}>Menjelang Acara</Text>
 
-      <Box>
-
+      <Box display='flex' flexDirection={'row'} justifyContent={'center'} gap={'80px'}>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
+          <Heading color={'white'} fontSize={50}>13</Heading>
+          <Text color={'white'} fontSize={24}>Hari</Text>
+        </Box>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
+          <Heading color={'white'} fontSize={50}>22</Heading>
+          <Text color={'white'} fontSize={24}>Jam</Text>
+        </Box>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
+          <Heading color={'white'} fontSize={50}>56</Heading>
+          <Text color={'white'} fontSize={24}>Menit</Text>
+        </Box>
+        <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
+          <Heading color={'#FFCE00'} fontSize={50}>20</Heading>
+          <Text color={'white'} fontSize={24}>Detik</Text>
+        </Box>
       </Box>
     </Box>
   )
