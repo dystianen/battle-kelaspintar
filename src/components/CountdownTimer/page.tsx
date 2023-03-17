@@ -15,7 +15,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: any) => {
           Hari
         </Text>
       </Box>
-      <Heading fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Heading>
+      <Text fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Text>
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
         <Heading color={'white'} fontSize={{ base: 28, md: 40, '2xl': 96 }}>
             <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
@@ -24,7 +24,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: any) => {
           Jam
         </Text>
       </Box>
-      <Heading fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Heading>
+      <Text fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Text>
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
         <Heading color={'white'} fontSize={{ base: 28, md: 40, '2xl': 96 }}>
             <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
@@ -33,7 +33,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }: any) => {
           Menit
         </Text>
       </Box>
-      <Heading fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Heading>
+      <Text fontSize={{ base: 40, md: 60, '2xl': 96 }}>:</Text>
       <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
         <Heading color={'#FFCE00'} fontSize={{ base: 28, md: 40, '2xl': 96 }}>
             <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
