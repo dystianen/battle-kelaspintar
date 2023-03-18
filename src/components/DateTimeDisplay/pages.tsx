@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
 
-type ValueTypes = {
+interface ValueTypes {
   value: number,
   type: string,
   color: string

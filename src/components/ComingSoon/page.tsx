@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
-import { Box, Heading, Hide, Image, Show, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Show, Text } from '@chakra-ui/react';
 import { CountdownTimer } from '../CountdownTimer/page';
 
 export default function CommingSoon() {
-  const event = new Date('2023-03-27T00:00:00').getTime();
+  const event = new Date('2023-03-27T00:00:00');
 
   return (
     <Box display={'flex'} flexDirection='column' justifyContent={'center'} alignItems={'center'} gap={{ base: '2rem', md: '1rem', lg: 0 }} minWidth={'50%'} minH={'100vh'} bgColor={'#0055B8'}>

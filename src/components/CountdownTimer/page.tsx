@@ -1,9 +1,9 @@
 import React from 'react';
 import DateTimeDisplay from '../DateTimeDisplay/pages';
 import { Box, Text } from '@chakra-ui/react';
-import { useCountdown } from '@/utils/useCountdown/page';
+import useCountdown from '@/utils/useCountdown/page';
 
-type DateTypes = {
+interface DateTypes {
   days: number,
   hours: number,
   minutes: number,
@@ -27,6 +27,5 @@ const ShowCounter = ({ days, hours, minutes, seconds }: DateTypes) => {
 export const CountdownTimer = ({ targetDate }: any) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  console.log(days, hours, minutes, seconds, { targetDate });
   return <ShowCounter days={days} hours={hours} minutes={minutes} seconds={seconds} />;
 };
