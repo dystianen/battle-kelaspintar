@@ -1,7 +1,9 @@
 'use client';
 import React from 'react';
 import { Box, Heading, Image, Show, Text } from '@chakra-ui/react';
-import { CountdownTimer } from '../CountdownTimer/page';
+import dynamic from 'next/dynamic';
+
+const CountdownTimer = dynamic(() => import('../CountdownTimer/page'), { ssr: false });
 
 export default function CommingSoon() {
   const event = new Date('2023-03-27T00:00:00');
