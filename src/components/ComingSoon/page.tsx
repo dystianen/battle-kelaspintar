@@ -7,7 +7,7 @@ export default function CommingSoon() {
   const event = new Date('2023-03-27T11:51:59').getTime();
 
   return (
-    <Box display={'flex'} flexDirection='column' justifyContent={'center'} alignItems={'center'} gap={{ base: '3rem', md: '1rem', lg: 0 }} minWidth={'50%'} minH={'100vh'} bgColor={'#0055B8'}>
+    <Box display={'flex'} flexDirection='column' justifyContent={'center'} alignItems={'center'} gap={{ base: '2rem', md: '1rem', lg: 0 }} minWidth={'50%'} minH={'100vh'} bgColor={'#0055B8'}>
       <Image w={{base: '100px', md: '300px'}} h={{base: '150px', md: '100px'}} src='/assets/images/particle1.png' alt='particle' position='absolute' top={0} right={0} />
 
       <Image w={{ base: '200px', md: '450px', '2xl': '400px' }} h={{ base: '200px', md: '250px', '2xl': '300px' }} src='/assets/images/particle-bottom.png' alt='particle' position='absolute' bottom={0} left={0} />
@@ -38,20 +38,11 @@ export default function CommingSoon() {
 
       <Box border='1px' borderColor='gray.200' borderRadius={'20px'} p={3} m={{ base: 5, md: 10 }} style={{ zIndex: '100' }}>
         <Box display={'flex'} flexDirection={'row'} gap={{ base: '25px', lg: '50px' }} bgColor={'#1067CD'} py={'20px'} px={{ base: '20px', md: '35px' }} borderRadius={'20px'}>
-          {/* <Box textAlign={'center'}>
-            <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
-              Catat Tanggalnya
-            </Text>
-            <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px' }}>
-              27 Mar - 08 Apr 2023
-            </Text>
-          </Box> */}
-
           <Box textAlign={'center'}>
-            <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
+            <Text color={'white'} fontSize={{ base: '20px', md: '24px' }}>
               Pendaftaran Peserta di mulai
             </Text>
-            <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px', lg: '30px' }}>
+            <Text color={'#FFCE00'} fontSize={{ base: '20px', md: '24px', lg: '30px' }}>
               27 Mar - 08 Apr 2023
             </Text>
           </Box>
