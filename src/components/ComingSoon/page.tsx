@@ -38,20 +38,20 @@ export default function CommingSoon() {
 
       <Box border='1px' borderColor='gray.200' borderRadius={'20px'} p={3} m={{ base: 5, md: 10 }} style={{ zIndex: '100' }}>
         <Box display={'flex'} flexDirection={'row'} gap={{ base: '25px', lg: '50px' }} bgColor={'#1067CD'} py={'20px'} px={{ base: '20px', md: '35px' }} borderRadius={'20px'}>
-          <Box textAlign={'center'}>
+          {/* <Box textAlign={'center'}>
             <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
               Catat Tanggalnya
             </Text>
             <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px' }}>
               27 Mar - 08 Apr 2023
             </Text>
-          </Box>
+          </Box> */}
 
           <Box textAlign={'center'}>
             <Text color={'white'} fontSize={{ base: '12px', md: '24px' }}>
-              Pendaftaran
+              Pendaftaran Peserta di mulai
             </Text>
-            <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px' }}>
+            <Text color={'#FFCE00'} fontSize={{ base: '12px', md: '24px', lg: '30px' }}>
               27 Mar - 08 Apr 2023
             </Text>
           </Box>
