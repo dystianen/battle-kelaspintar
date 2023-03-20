@@ -67,10 +67,10 @@ export default function Register() {
           </FormControl>
 
           <ButtonGroup spacing='2'>
-            <Button w={{ base: '150px', lg: '235px' }} variant='outline' colorScheme='blue' borderRadius={'30px'}>
+            <Button w={{ base: '150px', lg: '235px' }} variant='outline' borderColor={'#0055B8'} color={'#0055B8'} colorScheme='blue' borderRadius={'30px'}>
               Reset
             </Button>
-            <Button w={{ base: '150px', lg: '235px' }} variant='solid' colorScheme='blue' borderRadius={'30px'}>
+            <Button w={{ base: '150px', lg: '235px' }} variant='solid' bgColor='#0055B8' colorScheme='blue' borderRadius={'30px'}>
               Daftar
             </Button>
           </ButtonGroup>

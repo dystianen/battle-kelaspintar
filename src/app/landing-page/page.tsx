@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import Register from '@/components/register/page';
+import Register from '@/components/Register/page';
 import { Box } from '@chakra-ui/react';
 
 export default function LandingPage() {

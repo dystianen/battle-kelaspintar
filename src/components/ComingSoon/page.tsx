@@ -10,13 +10,13 @@ export default function CommingSoon() {
 
   return (
     <Box display={'flex'} flexDirection='column' justifyContent={'center'} alignItems={'center'} gap={{ base: '2rem', md: '1rem', lg: 0 }} minWidth={'50%'} minH={'100vh'} bgColor={'#0055B8'}>
-      <Image w={{base: '100px', md: '300px'}} h={{base: '150px', md: '100px'}} src='/assets/images/particle1.png' alt='particle' position='absolute' top={0} right={0} />
+      <Image w={{ base: '215px', md: '300px' }} h={{ base: '82px', md: '100px' }} src='/assets/images/particle-top.png' alt='particle' position='absolute' top={0} right={0} />
 
       <Image w={{ base: '200px', md: '450px', '2xl': '400px' }} h={{ base: '200px', md: '250px', '2xl': '300px' }} src='/assets/images/particle-bottom.png' alt='particle' position='absolute' bottom={0} left={0} />
 
-      <Image w={'80px'} h={'160px'} objectFit='cover' src='/assets/images/star-1.png' alt='particle' position='absolute' top={100} left={0} />
+      <Image w={{ base: '60px', md: '80px' }} h={{ base: '100px', md: '160px' }} objectFit='cover' src='/assets/images/star-left.png' alt='particle' position='absolute' top={100} left={0} />
 
-      <Image w={'80px'} h={'200px'} objectFit='cover' src='/assets/images/star-right.png' alt='particle' position='absolute' top={200} right={0} />
+      <Image w={{ base: '60px', md: '80px' }} h={{ base: '150px', md: '160px' }} objectFit='cover' src='/assets/images/star-right.png' alt='particle' position='absolute' top={200} right={0} />
 
       <Box zIndex={100}>
         <Image w={{ base: '140px', md: '200px', lg: '180px' }} h={{ base: '60px', md: '100px', lg: '80px' }} src='/assets/images/logo-kp.png' alt='kelas pintar' />
