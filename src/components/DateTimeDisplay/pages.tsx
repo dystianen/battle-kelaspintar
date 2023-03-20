@@ -9,10 +9,10 @@ interface ValueTypes {
 const DateTimeDisplay = ({ value, type, color }: ValueTypes) => {
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
-      <Text color={color} fontSize={{ base: '28px', md: '40px', '2xl': '96px' }}>
+      <Text color={color} fontSize={{ base: '28px', md: '40px', '2xl': '70px' }}>
         {value}
       </Text>
-      <Text color={'white'} fontSize={{ base: 20, md: 36, '2xl': 76 }}>
+      <Text color={'white'} fontSize={{ base: '20px', md: '36', '2xl': '54px' }}>
         {type}
       </Text>
     </Box>

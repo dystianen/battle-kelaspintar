@@ -14,11 +14,11 @@ const ShowCounter = ({ days, hours, minutes, seconds = 0 }: DateTypes) => {
   return (
     <Box display='flex' flexDirection={'row'} justifyContent={'center'} gap={{ base: '20px', md: '40px', lg: '80px' }} zIndex={10}>
       <DateTimeDisplay key={'days'} value={days} type={'Hari'} color={'white'}/>
-      <Text fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
+      <Text color={'white'} fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
       <DateTimeDisplay key={'hours'} value={hours} type={'Jam'} color={'white'}/>
-      <Text fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
+      <Text color={'white'} fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
       <DateTimeDisplay key={'minutes'} value={minutes} type={'Menit'} color={'white'}/>
-      <Text fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
+      <Text color={'white'} fontSize={{ base: '40px', md: '60px', '2xl': '96px' }}>:</Text>
       <DateTimeDisplay key={'seconds'} value={seconds} type={'Detik'} color={'#FFCE00'}/>
     </Box>
   );
