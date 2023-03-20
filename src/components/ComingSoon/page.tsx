@@ -74,7 +74,7 @@ export default function CommingSoon() {
           <Show breakpoint='(max-width: 500px)'>
             <br/>
           </Show>
-          wa : <a href="https://wa.me/+6281513003999" target="_blank"><u>+6281513003999</u></a></Text>
+          wa : <a href="https://wa.me/+6281513003999" target="_blank"><u>+62 815-1300-3999</u></a></Text>
       </Box>
     </Box>
   );
