@@ -109,7 +109,25 @@ input, option, select, label {
 }
 
 ::placeholder {
-  color: lightgray;
+  color: #a2b0c1;
+}
+
+.css-1dfiv1b {
+  background-color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  border-radius: 30px;
+}
+
+.css-qfq9qr {
+  margin-top: -1px !important;
+  height: 42px !important;
+  background-color: #FFFFFF !important;
+}
+
+@media (max-width: 640px) {
+  .css-wtf6ne {
+    width: 10px
+  }
 }
 
 @media (prefers-color-scheme: dark) {
