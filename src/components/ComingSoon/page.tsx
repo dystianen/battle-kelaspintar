@@ -70,7 +70,7 @@ export default function CommingSoon() {
           <Show breakpoint='(max-width: 500px)'>
             <br/>
           </Show>
-          emails : sobat@kelaspintar.id {' '}
+          email : sobat@kelaspintar.id {' '}
           <Show breakpoint='(max-width: 500px)'>
             <br/>
           </Show>
