@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Box, Heading, Image, Show, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Show, Text, Link } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
 
 const CountdownTimer = dynamic(() => import('../CountdownTimer/page'), {ssr: false});
@@ -70,11 +70,11 @@ export default function CommingSoon() {
           <Show breakpoint='(max-width: 500px)'>
             <br/>
           </Show>
-          email : sobat@kelaspintar.id {' '}
+          email : <a href="mailto:sobat@kelaspintar.id" target="_blank"><u>sobat@kelaspintar.id</u> {' '} </a>
           <Show breakpoint='(max-width: 500px)'>
             <br/>
           </Show>
-          wa : +6281513003999</Text>
+          wa : <a href="https://wa.me/+6281513003999" target="_blank"><u>+6281513003999</u></a></Text>
       </Box>
     </Box>
   );
