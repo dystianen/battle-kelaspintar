@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react';
 
 export default function LandingPage() {
   return (
-    <Box minH='100vh' bgColor={'#E3EEFF'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+    <Box minH='100vh'>
       <Register />
     </Box>
   );

@@ -113,7 +113,7 @@ input, option, select, label {
 }
 
 .css-1dfiv1b {
-  background-color: #FFFFFF !important;
+  background-color: #e3ebfe !important;
   border-color: #FFFFFF !important;
   border-radius: 30px;
 }
@@ -121,7 +121,30 @@ input, option, select, label {
 .css-qfq9qr {
   margin-top: -1px !important;
   height: 42px !important;
-  background-color: #FFFFFF !important;
+  background-color: #e3ebfe !important;
+}
+
+.css-wtf6ne {
+  background-color: #e3ebfe !important;
+}
+
+.css-onkibi {
+  font-size: 30px !important;
+  color: #84b2e5 !important;
+}
+
+.css-13otjrl {
+  font-size: 20px !important;
+  color: #84b2e5 !important;
+}
+
+.css-79elbk {
+  width: 100% !important;
+}
+
+label {
+  color: #0055B8 !important;
+  font-weight: 600 !important;
 }
 
 @media (max-width: 640px) {
