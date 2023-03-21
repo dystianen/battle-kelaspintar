@@ -214,8 +214,12 @@ export default function Register() {
                 </SimpleGrid>
               </FormControl>
 
-              <SimpleGrid columns={{base: 1, md: 2}}>
-                <FormLabel>Jurusan dan Pilihan Universitas kamu</FormLabel>
+              <SimpleGrid
+                columns={{base: 1, md: 2}}
+                alignSelf={{base: 'end', md: 'start'}}
+                mb={{base: '-20px', md: 0}}
+                mt={{base: '20px', md: 0}}>
+                <FormLabel m={0}>Jurusan dan Pilihan Universitas kamu</FormLabel>
                 <Show breakpoint={'(min-width: 768px)'}>
                   <Text fontSize={'lg'} color={'#0055B8'} alignSelf={'start'}>:</Text>
                 </Show>
