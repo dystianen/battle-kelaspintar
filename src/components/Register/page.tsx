@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { PropsWithRef, useState } from 'react';
 import {
   Text,
   FormControl,
@@ -20,7 +20,7 @@ import { useForm } from 'react-hook-form'
 import { Select } from 'chakra-react-select'
 import { IoMdEye, IoMdEyeOff } from 'react-icons/io'
 
-export default function Register() {
+export default function Register(props: PropsWithRef) {
   const {handleSubmit, register, formState: {errors, isSubmitting}} = useForm()
   const [show, setShow] = useState(false)
   const [schoolName, setSchoolName] = useState('')
@@ -47,7 +47,7 @@ export default function Register() {
   }
 
   return (
-    <Box minH={'100vh'} bgColor={'#f9c150'}>
+    <Box minH={'100vh'} bgColor={'#f9c150'} ref={props.registerRef}>
       <Container maxW={'4xl'} p={'20px'}>
         <Text
           alignSelf={{base: 'center', md: 'end', lg: 'center'}}
