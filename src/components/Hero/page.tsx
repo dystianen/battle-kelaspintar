@@ -1,7 +1,11 @@
-import React, {PropsWithRef} from 'react';
+import React from 'react';
 import { Box, Center, Text, Image, VStack, ButtonGroup, Button } from '@chakra-ui/react';
 
-export default function Hero(props: PropsWithRef) {
+interface HeroProps {
+  handleRegister: () => void;
+}
+
+export default function Hero(props: HeroProps) {
   return (
     <Box minH={{base: '70vh', sm: '80vh', lg: '100vh'}} bg={'#f9c150'} position={'relative'} pt={{ base: '10rem', md: '20rem', lg: '10rem' }}>
       {/* STAR TOP */}

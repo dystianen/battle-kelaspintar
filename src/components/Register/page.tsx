@@ -1,5 +1,5 @@
 'use client';
-import React, { PropsWithRef, useState } from 'react';
+import React, { Ref, useState } from 'react';
 import {
   Text,
   FormControl,
@@ -20,7 +20,7 @@ import { useForm } from 'react-hook-form'
 import { Select } from 'chakra-react-select'
 import { IoMdEye, IoMdEyeOff } from 'react-icons/io'
 
-export default function Register(props: PropsWithRef) {
+export default function Register(props: any) {
   const {handleSubmit, register, formState: {errors, isSubmitting}} = useForm()
   const [show, setShow] = useState(false)
   const [schoolName, setSchoolName] = useState('')
@@ -106,7 +106,7 @@ export default function Register(props: PropsWithRef) {
                       <Text fontSize={'lg'} color={'#0055B8'}>:</Text>
                     </Show>
                     <Select
-                      onChange={(event) => setSchoolName(event.value)}
+                      onChange={(event: any) => setSchoolName(event.value)}
                       placeholder={'Pilih Sekolah'}
                       colorScheme="purple"
                       options={[
@@ -133,7 +133,7 @@ export default function Register(props: PropsWithRef) {
                       <Text fontSize={'lg'} color={'#0055B8'}>:</Text>
                     </Show>
                     <Select
-                      onChange={(event) => setClassName(event.value)}
+                      onChange={(event: any) => setClassName(event.value)}
                       placeholder={'Pilih Kelas'}
                       colorScheme="purple"
                       options={[
@@ -237,7 +237,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnFirst({...ptnFirst, jurusan: event.value})}
+                        onChange={(event: any) => setPtnFirst({...ptnFirst, jurusan: event.value})}
                         placeholder={'Jurusan'}
                         colorScheme="purple"
                         options={[
@@ -255,7 +255,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnFirst({...ptnFirst, universitas: event.value})}
+                        onChange={(event: any) => setPtnFirst({...ptnFirst, universitas: event.value})}
                         placeholder={'Universitas'}
                         colorScheme="purple"
                         options={[
@@ -277,7 +277,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnSecond({...ptnSecond, jurusan: event.value})}
+                        onChange={(event: any) => setPtnSecond({...ptnSecond, jurusan: event.value})}
                         placeholder={'Jurusan'}
                         colorScheme="purple"
                         options={[
@@ -295,7 +295,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnSecond({...ptnSecond, universitas: event.value})}
+                        onChange={(event: any) => setPtnSecond({...ptnSecond, universitas: event.value})}
                         placeholder={'Universitas'}
                         colorScheme="purple"
                         options={[
@@ -317,7 +317,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnLast({...ptnLast, jurusan: event.value})}
+                        onChange={(event: any) => setPtnLast({...ptnLast, jurusan: event.value})}
                         placeholder={'Jurusan'}
                         colorScheme="purple"
                         options={[
@@ -335,7 +335,7 @@ export default function Register(props: PropsWithRef) {
                     </GridItem>
                     <GridItem colSpan={2}>
                       <Select
-                        onChange={(event) => setPtnLast({...ptnLast, universitas: event.value})}
+                        onChange={(event: any) => setPtnLast({...ptnLast, universitas: event.value})}
                         placeholder={'Universitas'}
                         colorScheme="purple"
                         options={[
