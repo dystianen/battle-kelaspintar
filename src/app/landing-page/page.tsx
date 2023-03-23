@@ -7,6 +7,7 @@ import Header from '@/components/Header/page';
 import Hero from '@/components/Hero/page';
 import Reward from '@/components/Reward/page';
 import Procedure from '@/components/Procedure/page';
+import TermConditions from '@/components/TermConditions/page';
 
 export default function LandingPage() {
   const myRef = useRef<HTMLInputElement>(null);
@@ -27,6 +28,7 @@ export default function LandingPage() {
       <Reward />
       <Procedure />
       <Register registerRef={myRef}/>
+      <TermConditions />
       <Footer />
     </Box>
   );
