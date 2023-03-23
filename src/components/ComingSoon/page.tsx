@@ -65,7 +65,7 @@ export default function CommingSoon() {
 
       <CountdownTimer targetDate={event}/>
 
-      <Box mt={'60px'} zIndex={10}>
+      <Box mt={'10px'} zIndex={10}>
         <Text fontSize={'20px'} color={'white'} align={'center'}>Info lebih lanjut hubungi {' '}
           <Show breakpoint='(max-width: 500px)'>
             <br/>
