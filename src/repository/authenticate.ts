@@ -2,16 +2,12 @@ import {http} from "@/utils/http";
 import useSWR from "swr";
 
 const url = {
-    getSchool: () => '/school',
-    getClass: () => '/class',
+    getAllData: () => '/register/get-initial-data',
 };
 
 const hooks = {
-    useGetSchool() {
-        return useSWR(url.getSchool(), http.fetcher)
-    },
-    useGetClass() {
-        return useSWR(url.getClass(), http.fetcher)
+    useGetAllData() {
+        return useSWR(url.getAllData(), http.fetcher)
     },
 };
 

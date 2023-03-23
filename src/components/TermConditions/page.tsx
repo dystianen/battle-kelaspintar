@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Center, HStack, Text, Image, OrderedList, ListItem, VStack } from '@chakra-ui/react';
+import { Box, Center, HStack, Text, Image, OrderedList, ListItem, VStack, Show } from '@chakra-ui/react';
 
 export default function TermConditions() {
   const [isSelect, setIsSelect] = useState('FAQ');
@@ -9,21 +9,23 @@ export default function TermConditions() {
   };
 
   return (
-    <Box minH={'100vh'} pt={'5rem'} bgColor={'#0055B8'} position={'relative'}>
-      <Image position={'absolute'} right={{ base: '4rem', md: '20rem' }} top={{ base: '5rem', md: '5rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
-      <Image position={'absolute'} left={{ base: '4rem', md: '10rem' }} top={{ base: '5rem', md: '10rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
-      <Image position={'absolute'} right={{ base: '4rem', md: '15rem' }} top={{ base: '5rem', md: '20rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
+    <Box zIndex={0} minH={'80vh'} pt={{base: '2rem', md: '5rem'}} bgColor={'#0055B8'} position={'relative'}>
+      <Image position={'absolute'} right={{ base: '1rem', md: '20rem' }} top={{ base: '1rem', md: '5rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
+      <Image position={'absolute'} left={{ base: '1rem', md: '10rem' }} top={{ base: '5rem', md: '10rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
+      <Show breakpoint={'(min-width: 768px)'}>
+        <Image position={'absolute'} right={{ base: '4rem', md: '15rem' }} top={{ base: '5rem', md: '20rem' }} w={{ base: '23px', md: '15px' }} h={{ base: '23px', md: '15px' }} src='/assets/particle/star-white.png' alt='Star' />
+      </Show>
 
-      <Center>
+      <Center p={'2em'} pb={'4em'}>
         <VStack>
-          <HStack spacing={'5rem'}>
+          <HStack spacing={{ base: '1rem', md: '5rem' }}>
             <Box
               onClick={() => onSelect('FAQ')}
               _hover={{
                 cursor: 'pointer',
               }}
               borderBottom={`4px solid ${isSelect === 'FAQ' ? '#FFFFFF' : '#4080C9'}`}
-              px={'4rem'}
+              px={{ base: '2rem', md: '4rem' }}
             >
               <Text fontSize={'32px'} color={isSelect === 'FAQ' ? '#FFFFFF' : '#4080C9'}>
                 FAQ
@@ -35,7 +37,7 @@ export default function TermConditions() {
                 cursor: 'pointer',
               }}
               borderBottom={`4px solid ${isSelect === 'S&K' ? '#FFFFFF' : '#4080C9'}`}
-              px={'4rem'}
+              px={{ base: '2rem', md: '4rem' }}
             >
               <Text fontSize={'32px'} color={isSelect === 'S&K' ? '#FFFFFF' : '#4080C9'}>
                 S&K
@@ -44,8 +46,8 @@ export default function TermConditions() {
           </HStack>
 
           {isSelect === 'S&K' && (
-            <Box w={'550px'}>
-              <Text textAlign={'center'} fontSize={'40px'} py={'1rem'}>
+            <Box maxW={'550px'}>
+              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} py={'1rem'}>
                 Syarat & Ketentuan Umum
               </Text>
               <OrderedList spacing={2}>
@@ -59,8 +61,8 @@ export default function TermConditions() {
           )}
 
           {isSelect === 'FAQ' && (
-            <Box w={'550px'}>
-              <Text textAlign={'center'} fontSize={'40px'} py={'1rem'}>
+            <Box maxW={'550px'}>
+              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} py={'1rem'}>
                 FAQ
               </Text>
               <OrderedList spacing={2}>

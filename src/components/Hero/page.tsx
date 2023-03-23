@@ -32,7 +32,7 @@ export default function Hero(props: HeroProps) {
       </Center>
 
       <Center mt={'1rem'}>
-        <Stack direction={['column', 'row']} spacing={4} align='center'>
+        <Stack direction={'row'} spacing={4} align='center'>
           <Button onClick={props.handleRegister} w={'clamp(8rem, 20vw, 10rem)'} variant='solid' bgColor='#FFFFFF' color='#0055B8' borderRadius={'30px'}>
             Daftar
           </Button>

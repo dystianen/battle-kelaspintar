@@ -18,10 +18,10 @@ export default function Register(props: any) {
   const [ptnFirst, setPtnFirst] = useState({});
   const [ptnSecond, setPtnSecond] = useState({});
   const [ptnLast, setPtnLast] = useState({});
-
   
-  const {data: packages, isValidating} = authenticateRepository.hooks.useGetSchool();
-  const {data: progress} = authenticateRepository.hooks.useGetClass();
+  const {data, isValidating} = authenticateRepository.hooks.useGetAllData();
+
+  console.log(data)
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -41,10 +41,12 @@ export default function Register(props: any) {
   };
 
   return (
-    <Box minH={'100vh'} bgColor={'#f9c150'} borderTopRadius={'95px'} position={'relative'} ref={props.registerRef}>
+    <Box minH={'100vh'} bgColor={'#f9c150'} borderTopRadius={{base: '30px', lg: '95px'}} position={'relative'} ref={props.registerRef}>
+      <Show breakpoint={'(min-width: 768px)'}>
       <Image zIndex={0} position={'absolute'} mt={'15rem'} src={'/assets/background/register.png'} />
+      </Show>
       <Center>
-        <Container zIndex={10} maxW={'4xl'} p={'20px'}>
+        <Container zIndex={10} maxW={'4xl'} p={'20px'} pt={'30px'}>
           <Text alignSelf={{ base: 'center', md: 'end', lg: 'center' }} fontSize={'clamp(24px, 4vw, 36px)'} align={'center'} color={'white'} fontWeight={600} mb={'10px'}>
             Daftarkan diri kamu sekarang!
           </Text>
@@ -94,17 +96,7 @@ export default function Register(props: any) {
                         onChange={(event: any) => setSchoolName(event.value)}
                         placeholder={'Pilih Sekolah'}
                         colorScheme='purple'
-                        options={[
-                          {
-                            label: 'I have the outline style',
-                            value: 'i-am-outlined',
-                            variant: 'outline', // The option variant overrides the global
-                          },
-                          {
-                            label: 'I fallback to the global `solid`',
-                            value: 'i-am-solid',
-                          },
-                        ]}
+                        options={data && data.schools}
                       />
                     </HStack>
                   </SimpleGrid>
@@ -123,17 +115,7 @@ export default function Register(props: any) {
                         onChange={(event: any) => setClassName(event.value)}
                         placeholder={'Pilih Kelas'}
                         colorScheme='purple'
-                        options={[
-                          {
-                            label: 'I have the outline style',
-                            value: 'i-am-outlined',
-                            variant: 'outline', // The option variant overrides the global
-                          },
-                          {
-                            label: 'I fallback to the global `solid`',
-                            value: 'i-am-solid',
-                          },
-                        ]}
+                        options={data && data.classes}
                       />
                     </HStack>
                   </SimpleGrid>
@@ -204,17 +186,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnFirst({ ...ptnFirst, jurusan: event.value })}
                           placeholder={'Jurusan'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'Universitas Brawijaya',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.studies}
                         />
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }}>
@@ -222,17 +194,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnFirst({ ...ptnFirst, universitas: event.value })}
                           placeholder={'Universitas'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'I have the outline style',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.universities}
                         />
                       </GridItem>
 
@@ -244,17 +206,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnSecond({ ...ptnSecond, jurusan: event.value })}
                           placeholder={'Jurusan'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'I have the outline style',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.studies}
                         />
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }}>
@@ -262,17 +214,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnSecond({ ...ptnSecond, universitas: event.value })}
                           placeholder={'Universitas'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'I have the outline style',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.universities}
                         />
                       </GridItem>
 
@@ -284,17 +226,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnLast({ ...ptnLast, jurusan: event.value })}
                           placeholder={'Jurusan'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'I have the outline style',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.studies}
                         />
                       </GridItem>
                       <GridItem colSpan={{ base: 4, md: 2 }}>
@@ -302,17 +234,7 @@ export default function Register(props: any) {
                           onChange={(event: any) => setPtnLast({ ...ptnLast, universitas: event.value })}
                           placeholder={'Universitas'}
                           colorScheme='purple'
-                          options={[
-                            {
-                              label: 'I have the outline style',
-                              value: 'i-am-outlined',
-                              variant: 'outline', // The option variant overrides the global
-                            },
-                            {
-                              label: 'I fallback to the global `solid`',
-                              value: 'i-am-solid',
-                            },
-                          ]}
+                          options={data && data.universities}
                         />
                       </GridItem>
                     </Grid>
