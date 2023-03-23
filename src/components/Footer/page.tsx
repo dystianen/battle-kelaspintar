@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <Box zIndex={100} bgColor={'#0055B8'}>
       <Image w={'100%'} h={{base: '150px', md: '200px', lg: '400px'}} src={'/assets/background/footer.png'} alt={'Background'} />
-      <Box mt={{base: '-5rem', md: '-15rem'}} bgColor={'#234990'} color={'#ffffff'} py={10} px={{ base: 10, md: 20, '2xl': '200px' }}>
+      <Box mt={{base: '-5rem', md: '-13rem'}} bgColor={'#234990'} color={'#ffffff'} py={10} px={{ base: 10, md: 20, '2xl': '200px' }}>
         <Text mb={5}>Home /</Text>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }}>
           <Box display='flex' flexDirection='column'>
