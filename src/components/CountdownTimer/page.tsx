@@ -1,7 +1,7 @@
 import React from 'react';
 import DateTimeDisplay from '../DateTimeDisplay/pages';
 import { Box, Text } from '@chakra-ui/react';
-import useCountdown from '@/utils/useCountdown/page';
+import useCountdown from '@/utils/countdown';
 
 interface DateTypes {
   days: number,

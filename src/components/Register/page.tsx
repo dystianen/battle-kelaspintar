@@ -1,9 +1,10 @@
 'use client';
-import React, { Ref, useState } from 'react';
+import React, { useState } from 'react';
 import { Text, FormControl, FormLabel, Input, Box, Grid, Button, ButtonGroup, SimpleGrid, InputGroup, InputRightElement, GridItem, Icon, Show, HStack, Container, Image, Center } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import { Select } from 'chakra-react-select';
 import { IoMdEye, IoMdEyeOff } from 'react-icons/io';
+import { authenticateRepository } from '@/repository/authenticate';
 
 export default function Register(props: any) {
   const {
@@ -17,6 +18,10 @@ export default function Register(props: any) {
   const [ptnFirst, setPtnFirst] = useState({});
   const [ptnSecond, setPtnSecond] = useState({});
   const [ptnLast, setPtnLast] = useState({});
+
+  
+  const {data: packages, isValidating} = authenticateRepository.hooks.useGetSchool();
+  const {data: progress} = authenticateRepository.hooks.useGetClass();
 
   const onSubmit = async (values: any) => {
     const data = {
@@ -37,7 +42,7 @@ export default function Register(props: any) {
 
   return (
     <Box minH={'100vh'} bgColor={'#f9c150'} borderTopRadius={'95px'} position={'relative'} ref={props.registerRef}>
-      <Image zIndex={0} position={'absolute'} mt={'15rem'} src={'/assets/background/register1.svg'} />
+      <Image zIndex={0} position={'absolute'} mt={'15rem'} src={'/assets/background/register.png'} />
       <Center>
         <Container zIndex={10} maxW={'4xl'} p={'20px'}>
           <Text alignSelf={{ base: 'center', md: 'end', lg: 'center' }} fontSize={'clamp(24px, 4vw, 36px)'} align={'center'} color={'white'} fontWeight={600} mb={'10px'}>
