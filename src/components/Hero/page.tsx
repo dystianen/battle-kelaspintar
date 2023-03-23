@@ -8,7 +8,7 @@ interface HeroProps {
 
 export default function Hero(props: HeroProps) {
   return (
-    <Box minH={{ base: '70vh', sm: '80vh', lg: '100vh' }} bg={'#f9c150'} position={'relative'} pt={{ base: '10rem', md: '20rem', lg: '10rem' }}>
+    <Box minH={{ base: '80vh', lg: '100vh' }} bg={'#f9c150'} position={'relative'} pt={{ base: '10rem', md: '20rem', lg: '10rem' }}>
       {/* STAR TOP */}
       <Image position={'absolute'} right={{ base: '4rem', md: '20rem' }} top={{ base: '5rem', md: '5rem' }} w={{ base: '23px', md: '44px' }} h={{ base: '23px', md: '43px' }} src='/assets/particle/star-white.png' alt='Star' />
       <Image position={'absolute'} left={{ base: '3rem', md: '20rem' }} top={{ base: '3rem', md: '2rem' }} w={{ base: '12px', md: '23px' }} h={{ base: '11px', md: '22px' }} src='/assets/particle/star-white.png' alt='Star' />
