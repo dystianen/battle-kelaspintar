@@ -1,6 +1,7 @@
 import { Box, Center, Image, Text, VStack } from '@chakra-ui/react';
 
 export default function Reward() {
+  console.log('test build')
   return (
     <Box minH={{base: '40vh', md: '120vh'}} w={'100vw'} bgColor={'#f9c150'} position={'relative'}>
       <Image zIndex={1} position={'absolute'} w={'100%'} h={'100%'} src='/assets/background/reward.png' alt='Kelas Pintar' />
