@@ -34,8 +34,7 @@ pipeline {
       }
       steps {
         sh '''
-        cp kelaspintar-config/applications/kelaspintar/kp-ptn-be/development/report/* .
-        cp kelaspintar-config/applications/kelaspintar/kp-ptn-be/development/report/.env .env
+        cp kelaspintar-config/applications/kelaspintar/kp-ptn-battle/development/* .
         rm -rf kelaspintar-config
         '''
       }
@@ -48,8 +47,7 @@ pipeline {
       }
       steps {
         sh '''
-        cp kelaspintar-config/applications/kelaspintar/kp-ptn-be/production/report/* .
-        cp kelaspintar-config/applications/kelaspintar/kp-ptn-be/production/report/.env .env
+        cp kelaspintar-config/applications/kelaspintar/kp-ptn-battle/production/* .
         rm -rf kelaspintar-config
         '''
       }
@@ -92,7 +90,7 @@ pipeline {
         }
       }
       steps {
-        sh "docker -H tcp://172.29.0.4:2376 stack deploy kp-ptn-be-report-development -c docker-compose.yml --prune --with-registry-auth --resolve-image=always"
+        sh "docker -H tcp://172.29.0.4:2376 stack deploy kp-ptn-battle-development -c docker-compose.yml --prune --with-registry-auth --resolve-image=always"
       }
     }
     stage('Deploy to production') {	
@@ -102,7 +100,7 @@ pipeline {
         }
       }	
       steps {	
-        sh "docker -H tcp://172.30.2.2:2376 stack deploy kp-ptn-be-report-production -c docker-compose.yml --prune --with-registry-auth --resolve-image=always"	
+        sh "docker -H tcp://172.30.1.49:2376 stack deploy kp-ptn-battle-production -c docker-compose.yml --prune --with-registry-auth --resolve-image=always"	
       }	
     }
   }
