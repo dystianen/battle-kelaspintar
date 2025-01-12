@@ -47,10 +47,10 @@ export default function TermConditions() {
 
           {isSelect === 'S&K' && (
             <Box maxW={'550px'}>
-              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} py={'1rem'}>
+              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} color={'#FFFFFF'} py={'1rem'}>
                 Syarat & Ketentuan Umum
               </Text>
-              <OrderedList spacing={2}>
+              <OrderedList spacing={2} color={'#FFFFFF'}>
                 <ListItem>Peserta Battle SNBT 2023 merupakan siswa/i SMA/SMK kelas 12</ListItem>
                 <ListItem>Peserta Battle SNBT 2023 wajib mengerjakan soal Try Out secara mandiri</ListItem>
                 <ListItem>Kelas Pintar berhak menggugurkan peserta Battle SNBT 2023 yang melakukan kecurangan dalam mengerjakan try out</ListItem>
@@ -62,10 +62,10 @@ export default function TermConditions() {
 
           {isSelect === 'FAQ' && (
             <Box maxW={'550px'}>
-              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} py={'1rem'}>
+              <Text textAlign={'center'} fontSize={{ base: '24px', md: '40px' }} color={'#FFFFFF'} py={'1rem'}>
                 FAQ
               </Text>
-              <OrderedList spacing={2}>
+              <OrderedList spacing={2} color={'#FFFFFF'}>
                 <ListItem>Peserta Battle SNBT 2023 merupakan siswa/i SMA/SMK kelas 12</ListItem>
                 <ListItem>Peserta Battle SNBT 2023 wajib mengerjakan soal Try Out secara mandiri</ListItem>
                 <ListItem>Kelas Pintar berhak menggugurkan peserta Battle SNBT 2023 yang melakukan kecurangan dalam mengerjakan try out</ListItem>

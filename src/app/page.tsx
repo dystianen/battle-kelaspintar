@@ -1,6 +1,5 @@
-import styles from './page.module.css'
-import CommingSoon from "@/components/ComingSoon/page";
+import LandingPage from './landing-page/page';
 
 export default function Home() {
-  return <CommingSoon />
+  return <LandingPage />
 }
